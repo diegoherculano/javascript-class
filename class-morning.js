@@ -9,11 +9,11 @@ function imc(peso, altura, sexo) {
   const arrHomem = [[20.7, 'Abaixo do Peso'], [26.4, 'Peso Normal'], [27.8, 'Marginalmente Acima do Peso'], [31.1, 'Acima do Peso Ideal'], [999, 'Obeso']]
   const arrMulher = [[19.1, 'Abaixo do Peso'], [25.8, 'Peso Normal'], [27.3, 'Marginalmente Acima do Peso'], [32.3, 'Acima do Peso Ideal'], [999, 'Obeso']]
 
-  if (sexo = 'mulher') {
+  if (sexo === 'mulher') {
     return arrMulher.find((value, index) => res < value[0])[1]
   }
 
-  if (sexo = 'homem') {
+  if (sexo === 'homem') {
     return arrHomem.find((value, index) => res < value[0])[1]
   }
 
